@@ -1,0 +1,140 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4ff;
+    color: #333;
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffffff; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+    border-radius: 10px; 
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2rem;
+    color: #4a90e2;
+}
+
+header p {
+    font-size: 1rem;
+    color: #555; 
+}
+
+.input-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#itemInput {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#addButton {
+    padding: 10px 20px;
+    background: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 0.3s ease;
+}
+
+#addButton:hover {
+    background: #45a049; 
+}
+
+.bucket-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.bucket-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 5px 0;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.bucket-list li .item-text {
+    flex: 1;
+}
+
+.bucket-list li button {
+    margin-left: 10px;
+    padding: 5px 15px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: 0.3s ease;
+}
+
+.bucket-list li button.edit-btn {
+    background: #007bff; 
+}
+
+.bucket-list li button.edit-btn:hover {
+    background: #0056b3; 
+}
+
+.bucket-list li button {
+    background: #f44336; 
+}
+
+.bucket-list li button:hover {
+    background: #d32f2f; 
+}
+
+.reset-btn {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 0.3s ease;
+}
+
+.reset-btn:hover {
+    background: #f44336; 
+}
+
+@media (max-width: 500px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    header p {
+        font-size: 0.9rem;
+    }
+
+    #addButton, .bucket-list li button {
+        font-size: 0.9rem;
+        padding: 5px 10px;
+    }
+}
